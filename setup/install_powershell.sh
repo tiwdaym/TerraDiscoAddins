@@ -1,22 +1,22 @@
-#!/bin/bash
+###################################
+# Prerequisites
 
-# Update package lists
-sudo apt update
+# Update the list of packages
+sudo apt-get update
 
-# Install dependencies
-sudo apt install curl lsb-release ca-certificates apt-transport-https software-properties-common
+# Install pre-requisite packages.
+sudo apt-get install -y wget
 
-# Add Microsoft GPG Key
-curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+# Download the PowerShell package file
+wget https://github.com/PowerShell/PowerShell/releases/download/v7.4.1/powershell_7.4.1-1.deb_amd64.deb
 
-# Add Microsoft Repository (replace with your desired version - check https://packages.microsoft.com/repos/ubuntu/)
-sudo add-apt-repository "$(curl -sSL https://packages.microsoft.com/config/ubuntu/$(lsb_release -cs)/prod.list)"
+###################################
+# Install the PowerShell package
+sudo dpkg -i powershell_7.4.1-1.deb_amd64.deb
 
-# Update package lists again
-sudo apt update
+# Resolve missing dependencies and finish the install (if necessary)
+sudo apt-get install -f
 
-# Install PowerShell
-sudo apt install powershell
+# Delete the downloaded package file
+rm powershell_7.4.1-1.deb_amd64.deb
 
-# Print confirmation message
-echo "PowerShell is now installed!"
