@@ -1,7 +1,6 @@
 This project is licensed under the Apache 2.0 license (refer to LICENSE file for details). While attribution is not required, it's always appreciated!
 
 # TerraDisco: Manage your Vanilla Terraria server with Discord!
-
 Play your favorite vanilla-like Terraria server with seamless integration into your Discord server. TerraDisco offers features like:
 
 * Shared Chat: Keep the conversation flowing - chat with fellow players in both Terraria and Discord.
@@ -12,9 +11,11 @@ Play your favorite vanilla-like Terraria server with seamless integration into y
 This project is ideal for Terraria server owners who want a convenient way to integrate their server with Discord.
 
 # Currently Developed for Linux
-
 TerraDisco is currently designed and developed for Linux systems. While adaptations for Windows are planned for the future, the current focus is on Linux compatibility.
 
-# Get Started:
+# Get Started / Setup:
+Download full project repository to your desired location on a linux server: https://github.com/tiwdaym/TerraDiscoAddins
 
-Head over to the project repository: https://github.com/tiwdaym/TerraDiscoAddins
+## Powershell dependency (Ubuntu)
+* Update setup/install_powershell.sh and make it executable using chmod +x install_powershell.sh.
+* Run the script with ./install_powershell.sh (assuming it's in your current directory).
