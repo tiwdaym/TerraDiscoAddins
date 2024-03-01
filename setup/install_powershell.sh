@@ -1,4 +1,5 @@
 ###################################
+# script taken from https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-linux?view=powershell-7.4
 # Prerequisites
 
 # Update the list of packages
